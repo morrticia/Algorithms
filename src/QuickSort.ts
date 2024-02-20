@@ -23,6 +23,10 @@ function partition(arr: number[], low: number, high: number): number {
         }
     }
 
+    // swapping pivot and element at the index
+    // Rule: Everything to the left of the pivot, needs to be less or equal to the pivot, 
+    // everything on the right of the pivot needs to be greater than pivot
+
     index++;
     arr[high] = arr[index];
     arr[index] = pivot;
